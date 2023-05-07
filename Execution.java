@@ -1,6 +1,6 @@
 package Reservation;
 
-import java.text.ParseException;
+
 import java.util.Scanner;
 
 public class Execution {
@@ -12,7 +12,7 @@ public class Execution {
         sc.nextLine();
         String checkIn = sc.nextLine();
         String checkOut = sc.nextLine();
-        reservation reservation = new reservation(roomNumber, checkIn, checkOut);
+        Reservation reservation = new Reservation(roomNumber, checkIn, checkOut);
 
         System.out.println(reservation);
 
@@ -20,7 +20,7 @@ public class Execution {
    
         String checkInUpdate = sc.nextLine();
         String checkOutUpdate = sc.nextLine();
-        reservation = new reservation(roomNumber,checkInUpdate, checkOutUpdate);
+        reservation = new Reservation(roomNumber,checkInUpdate, checkOutUpdate);
        
         System.out.println(reservation);
         sc.close();

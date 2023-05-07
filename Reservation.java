@@ -1,13 +1,12 @@
 package Reservation;
 
-import java.time.DateTimeException;
+
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import javax.print.attribute.standard.DateTimeAtProcessing;
 
-public class reservation {
+public class Reservation {
    private Integer roomNumber;
    private String checkIn;
    private String checkOut; 
@@ -16,12 +15,12 @@ public class reservation {
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-   public reservation(Integer roomNumber,String checkIn, String checkOut){
+   public Reservation(Integer roomNumber,String checkIn, String checkOut){
     this.roomNumber = roomNumber;
     this.checkIn = checkIn;
     this.checkOut = checkOut;
    }
-   public reservation(String checkIn, String checkOut) {
+   public Reservation(String checkIn, String checkOut) {
     this.checkIn = checkIn;
     this.checkOut = checkOut;
 }
